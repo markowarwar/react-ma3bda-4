@@ -1,0 +1,16 @@
+.movie-list { margin-bottom: 32px; }
+.movie-list__title { margin-bottom: 16px; }
+.movie-list__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* הודעה כשאין סרטים */
+.movie-list__empty {
+  padding: 32px;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}

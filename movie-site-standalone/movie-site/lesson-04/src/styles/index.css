@@ -1,0 +1,46 @@
+:root {
+  --bg: #14171f;
+  --surface: #1d222d;
+  --text: #f2f3f5;
+  --muted: #9aa3b2;
+  --border: #323949;
+  --gold: #f5c518;
+  --accent: #6c8cff;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, Arial, sans-serif; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+.header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 14px 0; font-weight: bold; }
+.footer { padding: 24px 0; color: var(--muted); text-align: center; }
+.page { padding-top: 24px; padding-bottom: 24px; }
+.page__intro p { color: var(--muted); }
+
+.btn {
+  padding: 8px 14px; border: 1px solid var(--border); border-radius: 999px;
+  background: var(--surface); color: var(--text); cursor: pointer;
+}
+.btn--active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* קו מפריד בין קבוצות של כפתורים */
+.toolbar__divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border);
+}
+
+/* כפתור "הצג עוד" באמצע, מתחת לרשימה */
+.more {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
